@@ -1,0 +1,12 @@
+[
+  {"term":"NGFW","mode":"word","enabled":true},
+  {"term":"WAF","mode":"word","enabled":true},
+  {"term":"Web Application Firewall","mode":"phrase","enabled":true},
+  {"term":"EDR","mode":"word","enabled":true},
+  {"term":"XDR","mode":"word","enabled":true},
+  {"term":"SIEM","mode":"word","enabled":true},
+  {"term":"SOAR","mode":"word","enabled":true},
+  {"term":"NDR","mode":"word","enabled":true},
+  {"term":"Email Security Gateway","mode":"phrase","enabled":true},
+  {"term":"Secure Web Gateway","mode":"phrase","enabled":true}
+]

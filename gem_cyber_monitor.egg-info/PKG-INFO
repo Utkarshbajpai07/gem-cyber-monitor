@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: gem-cyber-monitor
+Version: 0.1.0
+Summary: Conservative incremental GeM cybersecurity keyword monitor
+Requires-Python: >=3.11
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn[standard]<1,>=0.30
+Requires-Dist: requests<3,>=2.32
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: python-dotenv<2,>=1.0
+Requires-Dist: msal<2,>=1.30
+Provides-Extra: browser
+Requires-Dist: playwright<2,>=1.48; extra == "browser"
+Provides-Extra: test
+Requires-Dist: pytest<9,>=8; extra == "test"
+Requires-Dist: httpx<1,>=0.27; extra == "test"

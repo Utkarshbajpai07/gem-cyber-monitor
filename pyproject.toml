@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gem-cyber-monitor"
+version = "0.1.0"
+description = "Conservative incremental GeM cybersecurity keyword monitor"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn[standard]>=0.30,<1", "requests>=2.32,<3", "beautifulsoup4>=4.12,<5", "python-dotenv>=1.0,<2", "msal>=1.30,<2"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.48,<2"]
+test = ["pytest>=8,<9", "httpx>=0.27,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["gem_monitor*"]
